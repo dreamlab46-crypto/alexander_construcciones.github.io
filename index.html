@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexander Construcciones</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="shortcut icon" href="assets/images/LOGO ALEXANDER.png" rel="icon">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="nav">
+  <a href="#" class="logo-wrap">
+    <div class="logo-hex"> <img src="assets/images/LOGO ALEXANDER.png" alt=""> </div>
+    <div class="logo-words" style="margin-left:14px;">
+      <span class="logo-main">Alexander</span>
+      <span class="logo-sub">Construcciones</span>
+    </div>
+  </a>
+
+  <ul class="nav-menu">
+    <li><a href="#hero">Inicio</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#" class="nav-cat" onclick="openCatalog(event)"><i class="fa-solid fa-book-open"></i> Catálogo</a></li>
+    <li><a href="https://wa.me/573143234594" target="_blank" class="nav-cta"><i class="fa-brands fa-whatsapp"></i> Contáctenos</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-veil"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span>Desde 2005 · Bogotá, Colombia</span>
+    </div>
+    <h1 class="hero-h1">Construimos<br><em>Progreso</em></h1>
+    <p class="hero-tagline">Edificamos Sueños</p>
+    <div class="hero-rule"></div>
+    <div class="hero-btns">
+      <a href="#servicios" class="btn-gold"><i class="fa-solid fa-hard-hat"></i> Nuestros Servicios</a>
+      <a href="#" class="btn-ghost" onclick="openCatalog(event)"><i class="fa-solid fa-book-open"></i> Ver Catálogo</a>
+      <a href="#video" class="btn-ghost"><i class="fa-solid fa-circle-play"></i> Ver Video</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Explorar</span>
+    <div class="scroll-bar"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stat-item"><div class="stat-num"><sup>+</sup>500</div><div class="stat-lbl">Proyectos Terminados</div></div>
+  <div class="stat-item"><div class="stat-num">18</div><div class="stat-lbl">Años de Experiencia</div></div>
+  <div class="stat-item"><div class="stat-num"><sup>+</sup>200</div><div class="stat-lbl">Clientes Satisfechos</div></div>
+  <div class="stat-item"><div class="stat-num">7</div><div class="stat-lbl">Especialidades</div></div>
+</div>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="svc-top">
+    <div class="sec-label">Lo que hacemos</div>
+    <h2 class="sec-h2">Nuestros <em>Servicios</em></h2>
+    <p class="sec-p">Soluciones integrales de construcción con los más altos estándares de calidad y materiales certificados.</p>
+  </div>
+
+  <div class="svc-grid">
+    <div class="svc-card">
+      <img src="assets/images/servicios/pvc.jpeg" alt="PVC">
+      <div class="svc-veil"></div>
+      <div class="svc-body">
+        <div class="svc-icon"><i class="fa-solid fa-pipe-section"></i></div>
+        <div class="svc-name">PVC</div>
+        <div class="svc-desc">Instalación y reparación de tuberías y sistemas PVC para agua y conductos eléctricos.</div>
+        <div class="svc-line"></div>
+      </div>
+    </div>
+    <div class="svc-card">
+      <img src="assets/images/servicios/dry wall.jpeg" alt="Dry Wall">
+      <div class="svc-veil"></div>
+      <div class="svc-body">
+        <div class="svc-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <div class="svc-name">Dry Wall</div>
+        <div class="svc-desc">Divisiones, cielos rasos y fachadas con aislamiento térmico y acústico de alta eficiencia.</div>
+        <div class="svc-line"></div>
+      </div>
+    </div>
+    <div class="svc-card">
+      <img src="assets/images/servicios/remodelacion.jpeg" alt="Remodelación">
+      <div class="svc-veil"></div>
+      <div class="svc-body">
+        <div class="svc-icon"><i class="fa-solid fa-paintbrush"></i></div>
+        <div class="svc-name">Remodelación</div>
+        <div class="svc-desc">Renovación integral de cocinas, baños y espacios con diseño moderno y acabados de lujo.</div>
+        <div class="svc-line"></div>
+      </div>
+    </div>
+    <div class="svc-card">
+      <img src="assets/images/servicios/manposteria.jpeg" alt="Mampostería">
+      <div class="svc-veil"></div>
+      <div class="svc-body">
+        <div class="svc-icon"><i class="fa-solid fa-cubes"></i></div>
+        <div class="svc-name">Mampostería</div>
+        <div class="svc-desc">Muros, paredes y fachadas en ladrillo, bloque y piedra con precisión estructural.</div>
+        <div class="svc-line"></div>
+      </div>
+    </div>
+    <div class="svc-card">
+      <img src="assets/images/servicios/obra en gris.jpeg" alt="Obra Gris">
+      <div class="svc-veil"></div>
+      <div class="svc-body">
+        <div class="svc-icon"><i class="fa-solid fa-building"></i></div>
+        <div class="svc-name">Obra Gris</div>
+        <div class="svc-desc">Construcción completa desde cimentación hasta cubierta con materiales NSR-10.</div>
+        <div class="svc-line"></div>
+      </div>
+    </div>
+    <div class="svc-card">
+      <img src="assets/images/servicios/plomeria.webp" alt="Plomería">
+      <div class="svc-veil"></div>
+      <div class="svc-body">
+        <div class="svc-icon"><i class="fa-solid fa-faucet-drip"></i></div>
+        <div class="svc-name">Plomería</div>
+        <div class="svc-desc">Redes hidráulicas y sanitarias residenciales e industriales con garantía extendida.</div>
+        <div class="svc-line"></div>
+      </div>
+    </div>
+    <div class="svc-card" style="grid-column:span 3;">
+      <img src="assets/images/servicios/electricidad.jpg" alt="Electricidad">
+      <div class="svc-veil"></div>
+      <div class="svc-body">
+        <div class="svc-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div class="svc-name">Electricidad</div>
+        <div class="svc-desc">Instalaciones eléctricas residenciales e industriales bajo normativa RETIE y NTC 2050 vigentes.</div>
+        <div class="svc-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+  <div class="sec-label reveal">Video Promocional</div>
+  <h2 class="sec-h2 reveal">TODO EMPIEZA <em>CON UN SOLO PASO </em></h2>
+  <p class="sec-p reveal">Más de 18 años construyendo los sueños de nuestros clientes a lo largo y ancho de Bogotá y sus alrededores.</p>
+  <div class="vid-wrap reveal">
+    <div class="vid-ratio">
+      <div class="vid-thumb" onclick="playVideo()">
+        <div class="play-ring"><i class="fa-solid fa-play"></i></div>
+        <div class="vid-lbl">Ver Video Promocional</div>
+      </div>
+      <iframe id="vidFrame" src="" title="Alexander Construcciones" allow="autoplay;fullscreen" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="sec-label reveal">Nuestro Blog</div>
+  <h2 class="sec-h2 reveal">Últimas <em>Noticias</em></h2>
+  <p class="sec-p reveal">Tips, proyectos destacados y novedades del sector para que tomes las mejores decisiones.</p>
+  <div class="blog-grid">
+    <div class="blog-card">
+      <div class="blog-thumb"><img src="assets/images/remodelacion.jpg" alt=""></div>
+      <div class="blog-body">
+        <div class="blog-date">Mayo 2025</div>
+        <h3 class="blog-title">¿Cuándo es el momento de remodelar tu hogar?</h3>
+        <p class="blog-excerpt">Señales clave que indican que tu vivienda necesita una renovación antes de que los problemas escalen.</p>
+        <a href="#" class="blog-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-thumb"><img src="assets/images/dry wall.jpg" alt=""></div>
+      <div class="blog-body">
+        <div class="blog-date">Abril 2025</div>
+        <h3 class="blog-title">Ventajas del Dry Wall en construcciones modernas</h3>
+        <p class="blog-excerpt">Versátil, económico y ecológico. Descubre por qué cada vez más colombianos eligen el drywall.</p>
+        <a href="#" class="blog-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <div class="blog-thumb"><img src="assets/images/electricidad.jpg" alt=""></div>
+      <div class="blog-body">
+        <div class="blog-date">Marzo 2025</div>
+        <h3 class="blog-title">Cómo prevenir fugas eléctricas en tu vivienda</h3>
+        <p class="blog-excerpt">La seguridad eléctrica es fundamental. Conoce las revisiones que todo hogar debe tener.</p>
+        <a href="#" class="blog-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="logo-wrap" style="pointer-events:none;">
+        <div class="logo-hex">AC</div>
+        <div class="logo-words" style="margin-left:14px;">
+          <span class="logo-main">Alexander</span>
+          <span class="logo-sub">Construcciones</span>
+        </div>
+      </div>
+      <p class="footer-desc">Más de 18 años construyendo con pasión, calidad y compromiso. Tu hogar merece lo mejor — y nosotros se lo damos.</p>
+      <div class="socials">
+        <a href="https://wa.me/573143234594" target="_blank" class="soc-btn wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/alexander.construcciones?igsh=MW1lMnYyNXl2dmg4cA==" target="_blank" class="soc-btn ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Servicios</h5>
+      <ul>
+        <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> PVC</a></li>
+        <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Dry Wall</a></li>
+        <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Remodelación</a></li>
+        <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Mampostería</a></li>
+        <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Obra Gris</a></li>
+        <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Plomería</a></li>
+        <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Electricidad</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Empresa</h5>
+      <ul>
+        <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Inicio</a></li>
+        <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Servicios</a></li>
+        <li><a href="#video"><i class="fa-solid fa-chevron-right"></i> Video</a></li>
+        <li><a href="#blog"><i class="fa-solid fa-chevron-right"></i> Blog</a></li>
+        <li><a href="#" onclick="openCatalog(event)"><i class="fa-solid fa-chevron-right"></i> Catálogo</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contacto</h5>
+      <div class="contact-item"><i class="fa-solid fa-location-dot"></i> Bogotá, Colombia</div>
+      <div class="contact-item"><i class="fa-solid fa-phone"></i> +57 314 323 4594</div>
+      <div class="contact-item"><i class="fa-solid fa-envelope"></i>alexander.contrucciones@gmail.com</div>
+      <div class="contact-item"><i class="fa-solid fa-clock"></i> Lun – Sáb: 7 am – 6 pm</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Alexander Construcciones · Todos los derechos reservados</span>
+    <span>Desarrollado Por Dream Lab Studios</span>
+  </div>
+</footer>
+
+<!-- WA SIDE TAB -->
+<a href="https://wa.me/573143234594?text=Hola,%20quiero%20información%20sobre%20sus%20servicios" target="_blank" class="wa-tab">
+  <i class="fa-brands fa-whatsapp"></i>
+  Contáctanos
+</a>
+
+<!-- WA FAB -->
+  <div class="wa-tip" id="waTip">¡Escríbenos, te ayudamos! 👷</div>
+  <a href="https://wa.me/573143234594?text=Hola,%20quiero%20información%20sobre%20sus%20servicios"
+     target="_blank" class="wa-btn"
+     onmouseenter="document.getElementById('waTip').style.display='block'"
+     onmouseleave="document.getElementById('waTip').style.display='none'">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+</div>
+
+<!-- CATALOG MODAL -->
+<div class="cat-overlay" id="catOverlay" onclick="overlayClick(event)">
+  <div class="cat-box" id="catBox">
+
+    <div class="cat-head">
+      <div class="cat-head-left">
+        <div class="sec-label" style="margin-bottom:8px;">Alexander Construcciones</div>
+        <h2>Catálogo de <em>Servicios</em></h2>
+      </div>
+      <button class="cat-close" onclick="closeCatalog()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="cat-body">
+      <p class="cat-intro">Descubre toda nuestra oferta de servicios especializados. Contamos con más de 18 años de experiencia, materiales certificados y equipos altamente calificados para cada proyecto — desde pequeñas remodelaciones hasta grandes obras de construcción.</p>
+
+      <div class="cat-grid">
+        <!-- PVC -->
+        <div class="cat-item">
+          <div class="cat-img">
+            <img src="assets/images/catalogo/pvc.jpg" alt="PVC">
+            <span class="cat-badge">Disponible</span>
+          </div>
+          <div class="cat-item-body">
+            <div class="cat-item-icon"><i class="fa-solid fa-pipe-section"></i></div>
+            <div class="cat-item-name">PVC</div>
+            <div class="cat-item-desc">Instalación y reparación de sistemas completos en PVC para agua potable, aguas residuales y conductos.</div>
+            <ul class="cat-feats">
+              <li><i class="fa-solid fa-check"></i> Tuberías de presión y sanitarias</li>
+              <li><i class="fa-solid fa-check"></i> Conexiones y accesorios certificados</li>
+              <li><i class="fa-solid fa-check"></i> Mantenimiento preventivo y correctivo</li>
+            </ul>
+            <a href="https://wa.me/573143234594?text=Quiero%20cotizar%20PVC" target="_blank" class="cat-cta"><i class="fa-brands fa-whatsapp"></i> Cotizar ahora</a>
+          </div>
+        </div>
+        <!-- DRY WALL -->
+        <div class="cat-item">
+          <div class="cat-img">
+            <img src="assets/images/catalogo/dry wall.jpeg" alt="Dry Wall">
+            <span class="cat-badge">Popular</span>
+          </div>
+          <div class="cat-item-body">
+            <div class="cat-item-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="cat-item-name">Dry Wall</div>
+            <div class="cat-item-desc">Divisiones, cielos rasos y fachadas con aislamiento térmico y acústico de alta eficiencia.</div>
+            <ul class="cat-feats">
+              <li><i class="fa-solid fa-check"></i> Divisiones residenciales y comerciales</li>
+              <li><i class="fa-solid fa-check"></i> Cielos rasos y curvas decorativas</li>
+              <li><i class="fa-solid fa-check"></i> Aislamiento térmico y acústico</li>
+            </ul>
+            <a href="https://wa.me/573143234594?text=Quiero%20cotizar%20Dry%20Wall" target="_blank" class="cat-cta"><i class="fa-brands fa-whatsapp"></i> Cotizar ahora</a>
+          </div>
+        </div>
+        <!-- REMODELACIÓN -->
+        <div class="cat-item">
+          <div class="cat-img">
+            <img src="assets/images/catalogo/remodelacion.jpeg" alt="Remodelación">
+            <span class="cat-badge">Destacado</span>
+          </div>
+          <div class="cat-item-body">
+            <div class="cat-item-icon"><i class="fa-solid fa-paintbrush"></i></div>
+            <div class="cat-item-name">Remodelación</div>
+            <div class="cat-item-desc">Renovación integral de cocinas, baños, habitaciones y fachadas con diseño moderno.</div>
+            <ul class="cat-feats">
+              <li><i class="fa-solid fa-check"></i> Diseño y asesoría personalizada</li>
+              <li><i class="fa-solid fa-check"></i> Acabados en cerámica y porcelanato</li>
+              <li><i class="fa-solid fa-check"></i> Entrega puntual garantizada</li>
+            </ul>
+            <a href="https://wa.me/573143234594?text=Quiero%20cotizar%20Remodelación" target="_blank" class="cat-cta"><i class="fa-brands fa-whatsapp"></i> Cotizar ahora</a>
+          </div>
+        </div>
+        <!-- MAMPOSTERÍA -->
+        <div class="cat-item">
+          <div class="cat-img">
+            <img src="assets/images/catalogo/manposteria.jpg" alt="Mampostería">
+            <span class="cat-badge">Disponible</span>
+          </div>
+          <div class="cat-item-body">
+            <div class="cat-item-icon"><i class="fa-solid fa-cubes"></i></div>
+            <div class="cat-item-name">Mampostería</div>
+            <div class="cat-item-desc">Muros, paredes y fachadas en ladrillo, bloque y piedra con precisión estructural garantizada.</div>
+            <ul class="cat-feats">
+              <li><i class="fa-solid fa-check"></i> Muros de carga y divisorios</li>
+              <li><i class="fa-solid fa-check"></i> Fachadas ladrillo a la vista</li>
+              <li><i class="fa-solid fa-check"></i> Reforzamiento y reparación</li>
+            </ul>
+            <a href="https://wa.me/573143234594?text=Quiero%20cotizar%20Mampostería" target="_blank" class="cat-cta"><i class="fa-brands fa-whatsapp"></i> Cotizar ahora</a>
+          </div>
+        </div>
+        <!-- OBRA GRIS -->
+        <div class="cat-item">
+          <div class="cat-img">
+            <img src="assets/images/catalogo/obra en gris.jpg" alt="Obra Gris">
+            <span class="cat-badge">Premium</span>
+          </div>
+          <div class="cat-item-body">
+            <div class="cat-item-icon"><i class="fa-solid fa-building"></i></div>
+            <div class="cat-item-name">Obra Gris</div>
+            <div class="cat-item-desc">Estructura completa desde cimentación, columnas, vigas, losas hasta cubierta.</div>
+            <ul class="cat-feats">
+              <li><i class="fa-solid fa-check"></i> Cimentación y estructura en concreto</li>
+              <li><i class="fa-solid fa-check"></i> Supervisión técnica permanente</li>
+              <li><i class="fa-solid fa-check"></i> Materiales certificados NSR-10</li>
+            </ul>
+            <a href="https://wa.me/573143234594?text=Quiero%20cotizar%20Obra%20Gris" target="_blank" class="cat-cta"><i class="fa-brands fa-whatsapp"></i> Cotizar ahora</a>
+          </div>
+        </div>
+        <!-- PLOMERÍA -->
+        <div class="cat-item">
+          <div class="cat-img">
+            <img src="assets/images/catalogo/plomeria.jpg" alt="Plomería">
+            <span class="cat-badge">Disponible</span>
+          </div>
+          <div class="cat-item-body">
+            <div class="cat-item-icon"><i class="fa-solid fa-faucet-drip"></i></div>
+            <div class="cat-item-name">Plomería</div>
+            <div class="cat-item-desc">Instalación y mantenimiento de redes hidráulicas y sanitarias para todo tipo de inmueble.</div>
+            <ul class="cat-feats">
+              <li><i class="fa-solid fa-check"></i> Redes de agua fría y caliente</li>
+              <li><i class="fa-solid fa-check"></i> Sanitarios, lavamanos y duchas</li>
+              <li><i class="fa-solid fa-check"></i> Detección y reparación de fugas</li>
+            </ul>
+            <a href="https://wa.me/573143234594?text=Quiero%20cotizar%20Plomería" target="_blank" class="cat-cta"><i class="fa-brands fa-whatsapp"></i> Cotizar ahora</a>
+          </div>
+        </div>
+        <!-- ELECTRICIDAD -->
+        <div class="cat-item">
+          <div class="cat-img">
+            <img src="assets/images/catalogo/electricidad.jpg" alt="Electricidad">
+            <span class="cat-badge">Certificado</span>
+          </div>
+          <div class="cat-item-body">
+            <div class="cat-item-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div class="cat-item-name">Electricidad</div>
+            <div class="cat-item-desc">Instalaciones eléctricas residenciales e industriales bajo RETIE y NTC 2050 vigentes.</div>
+            <ul class="cat-feats">
+              <li><i class="fa-solid fa-check"></i> Tableros, circuitos y cableado</li>
+              <li><i class="fa-solid fa-check"></i> Iluminación LED y automatización</li>
+              <li><i class="fa-solid fa-check"></i> Certificación RETIE incluida</li>
+            </ul>
+            <a href="https://wa.me/573143234594?text=Quiero%20cotizar%20Electricidad" target="_blank" class="cat-cta"><i class="fa-brands fa-whatsapp"></i> Cotizar ahora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cat-foot">
+      <p>¿No encuentras lo que buscas? Escríbenos — tenemos solución para todo.</p>
+      <a href="https://wa.me/573143234594?text=Hola,%20quiero%20información%20sobre%20sus%20servicios" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> Pedir cotización
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
